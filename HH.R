@@ -84,7 +84,7 @@ HH <- function(sage = fag, z = 1, maxiter = 30, stol = 1e-10, atol = 0.1) {
   }
   
   if (abs(Savz[nag,z]) > atol) {
-    HH_nonconvz[z] <<- 1; # counter
+    HH_nonconvz[nag,z] <<- 1; # counter
   }
   
 }
